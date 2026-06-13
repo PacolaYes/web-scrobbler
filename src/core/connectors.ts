@@ -2898,4 +2898,10 @@ export default <ConnectorMeta[]>[
 		js: 'pixabay.js',
 		id: 'pixabay',
 	},
+	{
+		label: 'Nintendo Music',
+		matches: ['*://music.nintendo.com/*'],
+		js: 'nintendo-music.js',
+		id: "nintendo-music"
+	}
 ];
