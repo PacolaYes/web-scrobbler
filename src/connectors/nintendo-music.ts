@@ -33,7 +33,7 @@ function bindStuffIDK(element: (HTMLAudioElement | null)) {
 })();
 
 Connector.getTrack = () => navigator.mediaSession?.metadata?.title;
-Connector.getArtist = () => 'Nintendo Co., Ltd.';
+Connector.getArtist = () => (navigator.mediaSession?.metadata?.artist || 'Nintendo Co., Ltd.');
 Connector.getAlbum = () => navigator.mediaSession?.metadata?.album;
 
 // copied from youtube-music.ts :p
